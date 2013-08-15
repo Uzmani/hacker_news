@@ -1,0 +1,23 @@
+<!-- // list all posts here after user logs in
+ -->
+<!-- // button[go to post] that user can click on a post and takes us to the individual post page -->
+
+
+<div class="container">
+
+
+
+    
+    <h2>List of all Post in Wacker News</h2>
+    <ul>
+    <% @posts.each do |post| %>
+      <li>
+        <%=  " Post: #{post.content}"%>
+      </li>
+      <br>
+    <%end%>
+    </ul>
+ 
+
+
+</div>
